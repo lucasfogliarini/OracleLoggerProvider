@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Version>1.1.0</Version>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>2.0.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>lucasfogliarini@gmail.com</Authors>
     <Company>Dell</Company>
@@ -11,6 +11,7 @@
     <PackageProjectUrl>https://github.com/lucasfogliarini/OracleLoggerProvider</PackageProjectUrl>
     <PackageTags>microsoft-extensions-logging, oracle-manageddataaccess-core,  netcore, logging, oracle</PackageTags>
     <PackageIconUrl>http://www.oracle.com/technetwork/topics/dotnet/products/oracle-4747171.png</PackageIconUrl>
+    <Description>Database Logger Provider for Oracle using Oracle.ManagedDataAccess.Core and Microsoft Logging.</Description>
   </PropertyGroup>
 
   <ItemGroup>
