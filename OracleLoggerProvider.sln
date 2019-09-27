@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleLoggerProvider.UnitTests", "OracleLoggerProvider.UnitTests\OracleLoggerProvider.UnitTests.csproj", "{5547621B-F83A-484E-92C2-7C84077A2054}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OracleLoggerProvider", "OracleLoggerProvider\OracleLoggerProvider.csproj", "{C330E753-3530-4BF8-B183-78C5B994EC67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5EB36502-802E-409B-B4F1-6F9886FEB6E4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5547621B-F83A-484E-92C2-7C84077A2054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5547621B-F83A-484E-92C2-7C84077A2054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5547621B-F83A-484E-92C2-7C84077A2054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5547621B-F83A-484E-92C2-7C84077A2054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C330E753-3530-4BF8-B183-78C5B994EC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C330E753-3530-4BF8-B183-78C5B994EC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C330E753-3530-4BF8-B183-78C5B994EC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C330E753-3530-4BF8-B183-78C5B994EC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1E09A46-D658-4CD3-83FF-55227F85542F}
+	EndGlobalSection
+EndGlobal
