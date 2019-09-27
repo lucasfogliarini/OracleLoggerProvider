@@ -15,7 +15,7 @@ namespace OracleLoggerProvider.UnitTests
             var logConfiguration = NewLogConfiguration();
 
             //Act
-            var oracleLoggerProvider = new OracleLoggerProvider(connectionString, logConfiguration);
+            var oracleLoggerProvider = new OracleLogProvider(connectionString, logConfiguration);
 
             //Assert
             Assert.NotNull(oracleLoggerProvider);
@@ -30,11 +30,11 @@ namespace OracleLoggerProvider.UnitTests
             //Act
             Action action = () =>
             {
-                var oracleLoggerProvider = new OracleLoggerProvider(null, logConfiguration);
+                var oracleLoggerProvider = new OracleLogProvider(null, logConfiguration);
             };
 
             //Assert
-            Assert.Throws<ArgumentNullException>(OracleLoggerProvider.connectionStringParam, action);
+            Assert.Throws<ArgumentNullException>(OracleLogProvider.connectionStringParam, action);
         }
 
         [Fact]
@@ -46,11 +46,11 @@ namespace OracleLoggerProvider.UnitTests
             //Act
             Action action = () =>
             {
-                var oracleLoggerProvider = new OracleLoggerProvider(connectionString, null);
+                var oracleLoggerProvider = new OracleLogProvider(connectionString, null);
             };
 
             //Assert
-            Assert.Throws<ArgumentNullException>(OracleLoggerProvider.logConfigurationParam, action);
+            Assert.Throws<ArgumentNullException>(OracleLogProvider.logConfigurationParam, action);
         }
 
         [Fact]
@@ -63,11 +63,11 @@ namespace OracleLoggerProvider.UnitTests
             //Act
             Action action = () =>
             {
-                var oracleLoggerProvider = new OracleLoggerProvider(connectionString, logConfiguration);
+                var oracleLoggerProvider = new OracleLogProvider(connectionString, logConfiguration);
             };
 
             //Assert
-            Assert.Throws<ArgumentOutOfRangeException>(OracleLoggerProvider.logConfigurationParametersParam, action);
+            Assert.Throws<ArgumentOutOfRangeException>(OracleLogProvider.logConfigurationParametersParam, action);
         }
         [Fact]
         public void CreateLogger_ShouldReturnLogger()
@@ -75,7 +75,7 @@ namespace OracleLoggerProvider.UnitTests
             //Arrange
             var connectionString = "connectionString";
             var logConfiguration = NewLogConfiguration();
-            var oracleLoggerProvider = new OracleLoggerProvider(connectionString, logConfiguration);
+            var oracleLoggerProvider = new OracleLogProvider(connectionString, logConfiguration);
 
             //Act
             var logger = oracleLoggerProvider.CreateLogger("categoryNameCreatedAutomatically");

@@ -3,7 +3,7 @@ using System;
 
 namespace OracleLoggerProvider
 {
-    public class OracleLoggerProvider : ILoggerProvider
+    public class OracleLogProvider : ILoggerProvider
     {
         private readonly string _connectionString;
         private readonly LogConfiguration _logConfiguration;
@@ -12,7 +12,7 @@ namespace OracleLoggerProvider
         internal const string logConfigurationParametersParam = "LogConfiguration.Parameters";
         internal const string tableNameParam = "tableName";
 
-        public OracleLoggerProvider(string connectionString, LogConfiguration logConfiguration)
+        public OracleLogProvider(string connectionString, LogConfiguration logConfiguration)
         {
             CheckIfNull(connectionString, connectionStringParam);
             CheckLogConfiguration(logConfiguration);

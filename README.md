@@ -15,7 +15,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
     logConfiguration.Add("SOURCE_CONTEXT", LogValue.SourceContext);
     logConfiguration.Add("STATE", LogValue.State);
     logConfiguration.Add("EXCEPTION", LogValue.Exception);
-    var oracleLoggerProvider = new OracleLoggerProvider(connectionString, logConfiguration);
+    var oracleLoggerProvider = new OracleLogProvider(connectionString, logConfiguration);
 
     loggerFactory.AddProvider(oracleLoggerProvider);
 }

@@ -2,13 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>lucasfogliarini@gmail.com</Authors>
     <Company>Dell</Company>
     <NeutralLanguage>en</NeutralLanguage>
     <RepositoryUrl>https://github.com/lucasfogliarini/OracleLoggerProvider</RepositoryUrl>
     <PackageProjectUrl>https://github.com/lucasfogliarini/OracleLoggerProvider</PackageProjectUrl>
+    <PackageTags>microsoft-extensions-logging, oracle-manageddataaccess-core,  netcore, logging, oracle</PackageTags>
+    <PackageIconUrl>http://www.oracle.com/technetwork/topics/dotnet/products/oracle-4747171.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
