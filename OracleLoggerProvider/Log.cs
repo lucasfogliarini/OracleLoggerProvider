@@ -18,9 +18,9 @@ namespace OracleLoggerProvider
             if (templateValue == GetTemplate(LogValue.LogLevel))
                 return LogLevel.ToString();
             if (templateValue == GetTemplate(LogValue.Exception))
-                return Exception.ToString();
+                return Convert.ToString(Exception);
             if (templateValue == GetTemplate(LogValue.State))
-                return State.ToString();
+                return Convert.ToString(State);
             if (templateValue == GetTemplate(LogValue.Date))
                 return Date;
             if (templateValue == GetTemplate(LogValue.EventId))
