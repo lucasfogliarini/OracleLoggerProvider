@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Xunit;
 
-namespace OracleLogging.UnitTests
+namespace OracleLoggerProvider.UnitTests
 {
     [ExcludeFromCodeCoverage]
     public class OracleLoggerProviderTests

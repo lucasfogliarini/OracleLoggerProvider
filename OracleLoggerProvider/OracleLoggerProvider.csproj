@@ -6,8 +6,6 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>lucasfogliarini@gmail.com</Authors>
     <Company>Dell</Company>
-    <AssemblyName>OracleLoggerProvider</AssemblyName>
-    <RootNamespace>OracleLogging</RootNamespace>
     <NeutralLanguage>en</NeutralLanguage>
     <RepositoryUrl>https://github.com/lucasfogliarini/OracleLoggerProvider</RepositoryUrl>
     <PackageProjectUrl>https://github.com/lucasfogliarini/OracleLoggerProvider</PackageProjectUrl>

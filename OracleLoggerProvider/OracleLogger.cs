@@ -4,7 +4,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
-namespace OracleLogging
+namespace OracleLoggerProvider
 {
     internal class OracleLogger : ILogger
     {

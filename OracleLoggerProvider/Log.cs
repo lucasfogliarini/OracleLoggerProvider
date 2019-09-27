@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
 
-namespace OracleLogging
+namespace OracleLoggerProvider
 {
     internal class Log
     {

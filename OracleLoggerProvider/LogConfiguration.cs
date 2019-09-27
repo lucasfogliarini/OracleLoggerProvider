@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OracleLogging
+namespace OracleLoggerProvider
 {
     public class LogConfiguration
     {
