@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <Version>2.0.0</Version>
+    <Version>2.2.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>lucasfogliarini@gmail.com</Authors>
     <Company>Dell</Company>
