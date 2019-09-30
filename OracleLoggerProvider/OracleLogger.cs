@@ -21,8 +21,8 @@ namespace OracleLoggerProvider
 
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
-            bool allowLogLevel = logLevel == LogLevel.Critical || logLevel == LogLevel.Error || logLevel == LogLevel.Warning;
-            if (allowLogLevel)
+            bool matchMinimumLevel = logLevel >= _logConfiguration.MinLevel;
+            if (matchMinimumLevel)
             {
                 InsertLog(logLevel, eventId, state, exception, formatter);
             }

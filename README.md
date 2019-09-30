@@ -3,11 +3,12 @@
 
 ### Setup
 ```csharp
+//Startup.cs
 public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
 {
     string connectionString = "User Id=user; Password=pass; Data Source=datasource;";
 
-    var logConfiguration = new LogConfiguration("LOGGING.LOG");
+    var logConfiguration = new LogConfiguration("LOGGING.LOG", LogLevel.Error);
     logConfiguration.Add("SERVER_NAME", "Server1");
     logConfiguration.Add("APPLICATION", "OracleLoggerProvider");
     logConfiguration.Add("DATE", LogValue.Date);
